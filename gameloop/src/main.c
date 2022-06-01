@@ -159,10 +159,8 @@ void update(void) {
 
     // Check for ball collision with the paddle
 	if (ball.y + ball.height >= paddle.y &&
-			ball.x >= paddle.x &&
-			(ball.x + ball.width) <= (paddle.x + paddle.width) &&
-			(ball.y
-			)) { 
+			(ball.x + ball.width) >= paddle.x &&
+			(ball.x) <= (paddle.x + paddle.width)) { 
 		ball.vel_y *= -1.02;
 		ball.vel_x *= 1.02;
 	};
